@@ -30,5 +30,5 @@ This is a full-stack Todo application built using the MERN stack (MongoDB, Expre
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/mern-todo-app.git
-   cd mern-todo-app
+   git clone https://github.com/ykDhiRaj/yourTodo-fullstack-project.git
+   cd yourTodo-fullstack-project
