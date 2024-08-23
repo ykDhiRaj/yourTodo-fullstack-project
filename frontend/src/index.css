@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost Light";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.navbar{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FD3D6B;
+    font-weight: 900;
+    color: white;
+}
+
+.links a{
+    text-decoration: none;
+    margin-inline: 25px;
+    font-size: 1.5em;
+    color: white;
+}
+/* 
+.login{
+    background-color: aqua;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* General form styling */
+form.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto;
+    
+}
+
+/* Label styling */
+form.login label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+/* Input field styling */
+form.login input[type="email"],
+form.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+form.login button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+form.login button:hover {
+    background-color: #0056b3;
+}
+
+/* Adding focus styles to inputs */
+form.login input[type="email"]:focus,
+form.login input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 400px) {
+    form.login {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+
+/* General form styling */
+form.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto;
+}
+
+/* Heading styling */
+form.signup h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    align-self: flex-start;
+}
+
+/* Input field styling */
+form.signup input[type="text"],
+form.signup input[type="email"],
+form.signup input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+form.signup button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+form.signup button:hover {
+    background-color: #0056b3;
+}
+
+/* Adding focus styles to inputs */
+form.signup input[type="text"]:focus,
+form.signup input[type="email"]:focus,
+form.signup input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 400px) {
+    form.signup {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+
+button.logout {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for the button */
+button.logout:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Focus effect for the button */
+button.logout:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+/* Active state for the button */
+button.logout:active {
+    background-color: #bd2130;
+    transform: scale(0.95);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 400px) {
+    button.logout {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+
+.todoform{
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid black;
+    overflow: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.todoform input{
+    width: 95%;
+    height: 30px;
+    padding-left: 20px;
+    outline: none;
+}
+
+.todoformbtn{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: #FD3D6B;
+    color:white;
+}
+
+
+.todos{
+    border: 1px solid black;
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.todos h1{
+    color: #FD3D6B;
+}
+
+.todos button{
+    position: absolute;
+    right: 0;
+    top: 35%;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: white;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.time{
+    color: #333;
+    font-weight: 500;
+    margin-top: 10px;
+}
